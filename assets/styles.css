@@ -2,7 +2,7 @@
     --color-green: #07c32e;
     --color-green-dark: #09270c;
     --color-dark: #0f172a;
-    --color-white: #ffffff;
+    --color-white: #fff;
     --color-card-dark: #1e293b;
     --color-border-dark: #334155;
     --color-gray-50: #f8fafc;
@@ -25,7 +25,6 @@ html, body {
     color: var(--color-dark);
     background-color: var(--color-dark);
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -224,6 +223,28 @@ html, body {
     text-overflow: ellipsis;
 }
 
+.arrow-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-green-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation: hero-bounce 2s infinite;
+}
+
+.arrow-scroll--white {
+    color: var(--color-white);
+}
+
+.arrow-scroll__icon {
+    width: 32px;
+    height: 32px;
+}
+
 @media (min-width: 768px) {
     .page-slide {
         padding: 4rem 5rem;
@@ -251,5 +272,17 @@ html, body {
 @media (max-width: 480px) {
     .short-card__wrapper {
         aspect-ratio: 9 / 16;
+    }
+}
+
+@keyframes hero-bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate(-50%, 0);
+    }
+    40% {
+        transform: translate(-50%, -16px);
+    }
+    60% {
+        transform: translate(-50%, -8px);
     }
 }
