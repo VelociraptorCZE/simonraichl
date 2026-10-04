@@ -284,22 +284,25 @@ html, body {
 }
 
 .maker-content__grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
-    width: 100%;
 }
 
 .short-card {
     display: flex;
+    width: 100%;
+    max-width: 340px;
     flex-direction: column;
     gap: 0.75rem;
 }
 
 .short-card__wrapper {
     position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    max-height: 70vh;
+    display: flex;
+    justify-content: center;
     background-color: var(--color-card-dark);
     border: 1px solid var(--color-border-dark);
     border-radius: 16px;
@@ -309,12 +312,6 @@ html, body {
 
 .short-card__wrapper:hover {
     border-color: var(--color-green);
-}
-
-.short-card__iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
 }
 
 .short-card__caption {
@@ -349,20 +346,16 @@ html, body {
 }
 
 @media (min-width: 768px) {
+    .maker-content__grid {
+        justify-content: start;
+    }
+
     .page-slide {
         padding: 1.5rem 5rem;
     }
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .maker-content__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .short-card__wrapper {
-        aspect-ratio: 9 / 16;
     }
 
     .contact-card {
