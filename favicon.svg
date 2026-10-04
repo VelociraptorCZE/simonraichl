@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933333"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <rect
+       style="fill:#07c32e;stroke-width:2.55106;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="13.229166"
+       height="13.229166"
+       x="1.8520833"
+       y="1.8520833"
+       ry="2.6458333" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:7.85188px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#00ffff;stroke-width:6.83793;stroke-linecap:round;stroke-linejoin:round"
+       x="3.5066471"
+       y="11.73576"
+       id="text1"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';fill:#ffffff;stroke-width:6.83793"
+         x="3.5066471"
+         y="11.73576">ŠR</tspan></text>
+  </g>
+</svg>
