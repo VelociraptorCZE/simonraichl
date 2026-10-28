@@ -10,6 +10,7 @@
     --color-gray-200: #e2e8f0;
     --color-gray-400: #94a3b8;
     --color-gray-600: #475569;
+    --color-dark-gray: #141922;
     --font-main: "Segoe UI", system-ui, -apple-system, sans-serif;
     --font-heading: system-ui, -apple-system, sans-serif;
 }
@@ -53,13 +54,18 @@ html, body {
     color: var(--color-white);
 }
 
+.page-slide--pricing {
+    background: linear-gradient(150deg, var(--color-dark-gray) 25%, var(--color-card-dark));
+    color: var(--color-white);
+}
+
 .page-slide--contact {
     background-color: var(--color-white);
     color: var(--color-dark);
 }
 
 .page-slide--maker {
-    background-color: var(--color-green-dark);
+    background-color: var(--color-dark-gray);
     color: var(--color-white);
 }
 
@@ -347,6 +353,104 @@ html, body {
 .arrow-scroll__icon {
     width: 32px;
     height: 32px;
+}
+
+.pricing {
+    color: var(--color-white);
+    padding: 60px 20px;
+    font-family: var(--font-main), sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__container {
+    max-width: 650px;
+    width: 100%;
+}
+
+.pricing__title {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--color-border-dark);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pricing-table__header,
+.pricing-table__cell {
+    padding: 18px 24px;
+    text-align: left;
+}
+
+.pricing-table__header {
+    color: var(--color-gray-400);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--color-border-dark);
+}
+
+.pricing-table__header--right {
+    text-align: right;
+}
+
+.pricing-table__row {
+    border-bottom: 1px solid var(--color-border-dark);
+    transition: background-color 0.2s ease;
+}
+
+.pricing-table__body .pricing-table__row:last-child {
+    border-bottom: none;
+}
+
+.pricing-table__service-title {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.pricing-table__service-desc {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-gray-400);
+    margin-top: 2px;
+}
+
+.pricing-table__cell--price {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.pricing-table__note {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-gray-400);
+}
+
+@media (max-width: 480px) {
+    .pricing-table__header,
+    .pricing-table__cell {
+        padding: 14px 16px;
+    }
+
+    .pricing-table__cell--price {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 768px) {
