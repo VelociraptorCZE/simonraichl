@@ -314,6 +314,10 @@ html, body {
     border-color: var(--color-green);
 }
 
+.short-card__wrapper img {
+    object-fit: contain;
+}
+
 .short-card__caption {
     font-size: 0.85rem;
     color: var(--color-gray-400);
